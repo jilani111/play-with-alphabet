@@ -83,7 +83,9 @@ function gameOver(){
     const finalScore = getTextElementValueById('current_score');
     document.getElementById('last_final_score').innerText = finalScore;
 
-    
+    //clear the last selected alphabet highlighted
+    const lastSelectedAlphabet = document.getElementById('current_alphabet').innerText;
+    removeBgColorById(lastSelectedAlphabet);
 
       
 }
